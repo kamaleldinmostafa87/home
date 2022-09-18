@@ -10,6 +10,7 @@ body{
     margin: 0;
     height: 6000px;
     font-family: 'Circular Std';
+    overflow-x: hidden;
 }
 
 .introduction{
@@ -60,7 +61,7 @@ body{
 }
 
 /*****Three images and paragraphs****/
-.threeImages{
+.columns{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -68,7 +69,7 @@ body{
     margin-top: 10px;
 }
 
-.threeImages p{
+.columns p{
     width: 350px;
     height: 27px;
     font-family: 'Circular Std';
@@ -93,12 +94,12 @@ body{
     background: #306ADF;
     border-radius: 4px;
     position: absolute;
-    left: 20.5%;
+    left: 15.5%;
     margin-top: 156px;
     top: 21%;
     /* position: relative; */
 }
-.threeImages img{
+.columns img{
     width: 160px;
     height: 160px;
 }
@@ -167,11 +168,11 @@ body{
     z-index: 0;
     position: relative;
     bottom: -90%;
-    right: -22%;
+    right: -18%;
 }
 
 .care .circle{
-    left: -37%;
+    left: -52.5%;
     top: -74%;
     width: 150px;
     height: 150px;
@@ -203,7 +204,7 @@ body{
     z-index: 1;
     position: absolute;
     bottom: -8%;
-    left: 20.6%;
+    left: 16.3%;
 }
 
 .how .title{
@@ -222,14 +223,14 @@ body{
     right: 0%;
 }
 
-/******threeSections next to them******/
-.threeSections{
+/******Sections next to them******/
+.Sections{
     display: flex;
     justify-content: center;
     /* margin-top: 1%; */
 }
 
-.threeSections span{
+.Sections span{
     width: 350px;
     height: 39px;
     font-size: 30px;
@@ -237,13 +238,13 @@ body{
     letter-spacing: -0.01em;
     color: #306ADF;
 }
-.threeSections p,
-.threeSections span{
+.Sections p,
+.Sections span{
     font-weight: 500;
     letter-spacing: -0.01em;
 }
 
-.threeSections p{
+.Sections p{
     width: 330px;
     height: 48px;
     font-weight: 450;
@@ -262,7 +263,7 @@ body{
     border-radius: 100px;
 }
 
-.how .threeSections .section{
+.how .Sections .section{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -342,6 +343,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    width: auto;
     position: absolute;
     bottom: -125.88%;
     left: 10%;
@@ -358,15 +360,15 @@ body{
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
     padding: 30px;
     position: relative;
-    width: 635px;
+    width: 620px;
     height: 388px;
     border: 1px solid #EDF1F8;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
-    left: 31%;
+    left: 27%;
     right: 90px;
     padding: 30px;
-    top: 239px;
+    top: 600px;
     margin-right: 3%;
 }
 .all .rightartek{
@@ -377,10 +379,10 @@ body{
     align-items: center;
     padding: 30px;
     position: absolute;
-    width: 682px;
+    width: 675px;
     height: 450px;
-    left: 924px;
-    top: 239px;
+    left: 860px;
+    top: 600px;/*239*/
     background: #FFFFFF;
     border: 1px solid #EDF1F8;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
@@ -415,8 +417,8 @@ body{
     letter-spacing: -0.01em;
     color: #1F2F4C;
 }
-.all .leftartek .words .fasla,
-.all .rightartek .words .fasla
+.all .leftartek .words .seperator,
+.all .rightartek .words .seperator
 {
     width: 38.65px;
     height: 30px;   
@@ -431,8 +433,8 @@ body{
     left: 5%;
 }
 
-.all .leftartek .under span,
-.all .rightartek .under span{
+.all .leftartek .bottomOfsection span,
+.all .rightartek .bottomOfsection span{
     width: 305px;
     height: 20px;
     font-weight: 450;
@@ -450,8 +452,8 @@ body{
     margin-left: 3%;
     line-height: 1%;
 } 
-.all .leftartek .under,
-.all .rightartek .under{
+.all .leftartek .bottomOfsection,
+.all .rightartek .bottomOfsection{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -459,8 +461,8 @@ body{
     margin-top: 9%;
 }
 
-.all .leftartek .under .girl,
-.all .rightartek .under .girl{
+.all .leftartek .bottomOfsection .person,
+.all .rightartek .bottomOfsection .person{
     width: 40px;
     height: 40px;
 }
@@ -473,23 +475,18 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -175%;
-    right: -640px;
+    bottom: -260%;
+    left: 18.5%;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px 10px;
-    /* /* gap: 10px; */
     width: 1110px;
     height: 391px;
     background: #FFFFFF;
     border-top: 10px solid #EB008B;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
-    flex: none;
+    /* flex: none; */
     order: 7;
-    flex-grow: 0;   
 }
 /*photoes*/
 .dentists .Ellipse2{
@@ -499,7 +496,7 @@ body{
 }
 
 .dentists .flag{
-    margin-right: -3%;
+    margin-left: -3%;
 }
 
 /*margin to guid/*/
@@ -516,6 +513,8 @@ body{
     line-height: 130%;
     letter-spacing: -0.01em;
     color: #1F2F4C;
+    position: relative;
+    bottom: 15px;
 }
 
 .dentists .guide .start{
@@ -527,9 +526,19 @@ body{
     letter-spacing: -0.01em;
     color: #1F2F4C;
     position: absolute;
-    top: 25%;
+    top: 21%;
+    left: 7%;
 }
 
+/*vectors and paragraph*/
+.dentists .guide .vectorandp{
+    display: flex;
+    flex-direction: row;
+} 
+.dentists .guide .vecetor2{
+   height: 25px;
+}
+/* Paragraph */
 .dentists .guide .points .pp{
     width: 601px;
     height: 23px;
@@ -538,13 +547,92 @@ body{
     line-height: 130%;
     letter-spacing: -0.01em;
     color: #EB008B; 
-    margin-left: 5.9%; 
+    margin-left:1.9%; 
+    position: relative;
+    bottom: 14px;
 }
 
-/*starts*/
-.dentists .guide .vecetor2{
+/* Input and button */
+.inputAndbtn{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+/* input */
+.dentists .guide .inpt{
+    width: 230px;
+    height: 45px;
+    padding-left: 10px;
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    margin-right: 15px;
+    color: #1F2F4C;
+    opacity: 0.2;
+}
+
+/* btn */
+.dentists .guide .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    width: 200px;
+    height: 45px;
+    font-family: 'Circular Std';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    background: #EB008B;
+    border-radius: 100px;
+    letter-spacing: -0.01em;
+    border-color: white;
+    color: #FFFFFF;
+}
+
+/**Sliderrrrrrr Experiment**/
+
+.swiper {
+    width: 60%;
+    height: 5%;
     position: absolute;
-    left: 7%;
-}
+    bottom: -300%;
+    margin:0 auto;
 
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  @media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
     
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }

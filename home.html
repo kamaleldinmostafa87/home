@@ -1,25 +1,27 @@
 <html>
     <head>
     <title>Home</title>
-    <link rel="stylesheet" href="home.css">
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="home.css">       
+</head>
     <body>
         <div class="introduction">
             <p class="intro">Introducing the<Span> Patient Care Program</Span></p>
             <span class="easy">the easy way to </span>
 
-            <div class="threeImages">
-                <div class="one">
+            <div class="columns">
+                <div class="column">
                     <img class="img1" src="Woman.png" alt=""/>
                     <p>Wow patients</p>
                     <span>So they want to talk about you</span>
                 </div> 
-                <div class="two">
+                <div class="column">
                     <img class="img2" src="Smiling-Man.png" alt=""/>
                     <p>Make patients feel like they belong</p>
                     <span>So they want to talk about you</span>
                 </div> 
-                <div class="three">
+                <div class="column">
                     <img class="img3" src="Fan-Hand.png" alt="">
                     <p>Make your practice grow</p>
                     <span>So you can take a long vacation</span>
@@ -41,7 +43,7 @@
             <div class="how">
                 <p class="title">How does it work?</p>
                 <img src="Ellipse 2.png" alt="" />
-                <div class="threeSections">
+                <div class="Sections"><!---threeSections--->
                     <div class="section">
                         <span class="oneNumber"><span class="Number1">1</span></span>
                         <span>Go</span>
@@ -69,8 +71,8 @@
 
         <div class="what">
             <div class="leftaright">
-                <img class="right" src="right.png" />
-                <img class="left" src="right.png" />
+                <img class="right swiper-button-next" src="right.png" />
+                <img class="left swiper-button-prev" src="right.png" />
             </div>
             <p>
                 What our clients say
@@ -79,13 +81,12 @@
 
         <div class="all">
             <div class="leftartek">
-
                 <div class="words">
-                    <img class="fasla" src="text.png" alt="" />
+                    <img class="seperator" src="text.png" alt="" />
                     <p class="concept">Concept of the number one inconspicuous motes of rock. Tendrils of gossamer clouds cosmic fugue something incredible is waiting to be known explorations rich. Tunguska event radio telescope.</p>
                    
-                    <div class="under">
-                        <img class="girl" src="img (1).png"/>
+                    <div class="bottomOfsection">
+                        <img class="person" src="img (1).png"/><!---->
                         <div class="marisa">
                             <p>Marisa Roninson</p>
                             <span>VP Operations, Artek Indistries</span>
@@ -99,11 +100,11 @@
 
             <div class="rightartek">
                 <div class="words">
-                    <img class="fasla" src="text.png" alt="" />
+                    <img class="seperator" src="text.png" alt="" /><!---->
                     <p class="concept">Concept of the number one inconspicuous motes of rock. Tendrils of gossamer clouds cosmic fugue something incredible is waiting to be known explorations rich. Tunguska event radio telescope.</p>
                    
-                    <div class="under">
-                        <img class="girl" src="img (1).png"/>
+                    <div class="bottomOfsection">
+                        <img class="person" src="img (1).png"/>
                         <div class="marisa">
                             <p>Marisa Roninson</p>
                             <span>VP Operations, Artek Indistries</span>
@@ -114,24 +115,55 @@
 
                 <img class="artek" src="Mask group.png"/>
             </div>
-
-            <div class="dentists">
-                <div class="guide">
-                    <p class="help">We’re Here to Help Dentists Win</p>
-                    <span class="start">Start with our free Patient Experience Guide.</span>
-                    <div class="points">
-                        <img class="vecetor2" src="Vector2.png" alt /><p class="pp">Simple patient follow up messages that work</p>
-                        <img class="vecetor2" src="Vector2.png" alt /><p class="pp">How to streamline processes that requires patients’ involvement</p>
-                        <img class="vecetor2" src="Vector2.png" alt /><p class="pp">Personalization methods that improve satisfaction (and reduce fear!)</p>
-                    </div>
-                    <div>
-                        <button class="btn1"></button>
-                        <button class="btn2"></button>
-                    </div>
-                </div>
-                <img class="flag" src="Flag.png" alt="">
-                <img class="Ellipse2" src="Ellipse 2 (1).png" alt=""/>
-            </div>
         </div>
+
+        <div class="dentists">
+            <div class="guide">
+                <p class="help">We’re Here to Help Dentists Win</p>
+                <span class="start">Start with our free Patient Experience Guide.</span>
+
+                <div class="points">
+                    <div class="vectorandp"> 
+                        <img class="vecetor2" src="Vector2.png" alt />
+                        <p class="pp">Simple patient follow up messages that work</p>
+                    </div>
+                    <div class="vectorandp">
+                        <img class="vecetor2" src="Vector2.png" alt />
+                        <p class="pp">How to streamline processes that requires patients’ involvement</p>
+                    </div>
+                    <div class="vectorandp">
+                        <img class="vecetor2" src="Vector2.png" alt />
+                        <p class="pp">Personalization methods that improve satisfaction (and reduce fear!)</p>
+                    </div>  
+                </div>
+                
+                <div class="inputAndbtn">
+                    <input class="inpt" placeholder="Enter your mail"/>
+                    <button class="btn">Get Instant Access</button>
+                </div>
+            </div>
+                    <img class="flag" src="Flag.png" alt="">
+                    <img class="Ellipse2" src="Ellipse 2 (1).png" alt=""/>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+              <div class="swiper-slide">Resize me!</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="home.js"></script>
     </body>
 </html>
